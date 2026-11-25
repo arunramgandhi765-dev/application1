@@ -1,0 +1,312 @@
+{
+  "courses": [
+    {
+      "slug": "data-science",
+      "name": "Data Science",
+      "icon": "chart",
+      "tag": "MAKE DATA MEANINGFUL",
+      "description": "Python • SQL • Machine Learning",
+      "overview": "Turn questions into insights. Explore Python, work with real datasets, and build a foundation in statistics and machine learning.",
+      "topics": [
+        "Python foundations",
+        "SQL and data analysis",
+        "Statistics and probability",
+        "Data cleaning and visualisation",
+        "Machine learning foundations",
+        "An end-to-end data project"
+      ]
+    },
+    {
+      "slug": "data-engineering",
+      "name": "Data Engineering",
+      "icon": "database",
+      "tag": "BUILD THE FOUNDATION",
+      "description": "Databases • Pipelines • Analytics",
+      "overview": "Learn how data moves from its source to useful analytics. Explore relational databases, data modelling, and reliable data pipelines.",
+      "topics": [
+        "Python for data workflows",
+        "Relational databases and SQL",
+        "Data modelling",
+        "ETL and ELT fundamentals",
+        "Building data pipelines",
+        "A practical pipeline project"
+      ]
+    },
+    {
+      "slug": "artificial-intelligence",
+      "name": "Artificial Intelligence",
+      "icon": "brain",
+      "tag": "TURN IDEAS INTO INTELLIGENCE",
+      "description": "Deep Learning • GenAI • AI Agents",
+      "overview": "Understand the ideas behind modern AI and apply them step by step. Move from neural networks to generative AI and practical AI applications.",
+      "topics": [
+        "Machine learning foundations",
+        "Neural networks and deep learning",
+        "Natural language processing",
+        "Generative AI and prompting",
+        "Embeddings and retrieval-augmented generation",
+        "Building an AI application"
+      ]
+    },
+    {
+      "slug": "data-science-genai",
+      "name": "Data Science & GenAI",
+      "icon": "chart",
+      "description": "Data analysis • Machine Learning • Generative AI",
+      "topics": [
+        "Python and statistics",
+        "Exploratory data analysis",
+        "Machine learning workflows",
+        "Generative AI applications"
+      ],
+      "tag": "EXPLORE YOUR NEXT SKILL",
+      "overview": "Explore data science & genai through a focused learning path. Start with the foundations and connect what you learn to a practical project."
+    },
+    {
+      "slug": "agentic-ai-machine-learning",
+      "name": "Next-Gen Agentic AI & Machine Learning",
+      "icon": "brain",
+      "description": "Machine Learning • AI Agents • Tool Use",
+      "topics": [
+        "Supervised learning foundations",
+        "Language models and prompting",
+        "Agent planning and tool use",
+        "Evaluating an AI workflow"
+      ],
+      "tag": "EXPLORE YOUR NEXT SKILL",
+      "overview": "Explore next-gen agentic ai & machine learning through a focused learning path. Start with the foundations and connect what you learn to a practical project."
+    },
+    {
+      "slug": "ai-cloud-devops",
+      "name": "AI Cloud & DevOps",
+      "icon": "cloud",
+      "description": "Cloud • Automation • Model Deployment",
+      "topics": [
+        "Cloud computing foundations",
+        "Containers and deployment",
+        "CI/CD workflows",
+        "Monitoring AI applications"
+      ],
+      "tag": "EXPLORE YOUR NEXT SKILL",
+      "overview": "Explore ai cloud & devops through a focused learning path. Start with the foundations and connect what you learn to a practical project."
+    },
+    {
+      "slug": "forward-deployed-ai-engineering",
+      "name": "Forward Deployed AI Engineering",
+      "icon": "terminal",
+      "description": "AI Solutions • Integration • Deployment",
+      "topics": [
+        "Understanding business requirements",
+        "Prototyping AI solutions",
+        "API and system integration",
+        "Deployment and evaluation"
+      ],
+      "tag": "EXPLORE YOUR NEXT SKILL",
+      "overview": "Explore forward deployed ai engineering through a focused learning path. Start with the foundations and connect what you learn to a practical project."
+    },
+    {
+      "slug": "ai-powered-automotive-design",
+      "name": "AI-Powered Automotive Design",
+      "icon": "car",
+      "description": "Design • CAD Concepts • AI Workflows",
+      "topics": [
+        "Automotive design foundations",
+        "CAD modelling concepts",
+        "AI-assisted design workflows",
+        "A design exploration project"
+      ],
+      "tag": "EXPLORE YOUR NEXT SKILL",
+      "overview": "Explore ai-powered automotive design through a focused learning path. Start with the foundations and connect what you learn to a practical project."
+    },
+    {
+      "slug": "ai-powered-business-analytics",
+      "name": "AI-Powered Business Analytics",
+      "icon": "briefcase",
+      "description": "SQL • Dashboards • AI Insights",
+      "topics": [
+        "Business questions and metrics",
+        "SQL for business analysis",
+        "Dashboard storytelling",
+        "AI-assisted analysis"
+      ],
+      "tag": "EXPLORE YOUR NEXT SKILL",
+      "overview": "Explore ai-powered business analytics through a focused learning path. Start with the foundations and connect what you learn to a practical project."
+    }
+  ],
+  "practice": [
+    {
+      "slug": "codekata",
+      "name": "CodeKata",
+      "icon": "code",
+      "description": "Sharpen your coding skills, prepare for interviews",
+      "tag": "THINK. SOLVE. REPEAT.",
+      "overview": "Start with small JavaScript challenges. Write your solution, run the examples, and improve it one step at a time."
+    },
+    {
+      "slug": "webkata",
+      "name": "WebKata",
+      "icon": "web",
+      "description": "Build basic frontend & backend development skills",
+      "tag": "FROM CODE TO CANVAS",
+      "overview": "Experiment with HTML, CSS, and JavaScript in a live frontend preview. A backend API exercise is included below the editor."
+    },
+    {
+      "slug": "sqlkata",
+      "name": "SQLKata",
+      "icon": "database",
+      "description": "Master SQL concepts in relational database management",
+      "tag": "ASK BETTER QUESTIONS",
+      "overview": "Practise SELECT queries, filtering, aggregation, and JOINs against a small sample database. Your queries use a fresh, read-only practice dataset."
+    },
+    {
+      "slug": "fixthecode",
+      "name": "FixTheCode",
+      "icon": "bug",
+      "description": "A series of programs curated by industry experts",
+      "tag": "FIND IT. FIX IT.",
+      "overview": "Try the starter debugging exercises below. Read the expected behaviour, identify the bug, and check your corrected JavaScript."
+    },
+    {
+      "slug": "ide",
+      "name": "IDE - Online Compiler",
+      "icon": "terminal",
+      "description": "Run & test your code in any programming language",
+      "tag": "YOUR NEXT IDEA STARTS HERE",
+      "overview": "Run JavaScript directly in your browser. Python, Java, C, and other languages become available when the site owner connects a compatible compiler service."
+    }
+  ],
+  "products": [
+    {
+      "slug": "hackerkid",
+      "name": "HackerKID",
+      "icon": "spark",
+      "description": "Coding classes platform for K-12 children",
+      "tag": "BIG IDEAS START SMALL",
+      "overview": "Explore a coding learning path for school-age children, from creative problem solving to building simple projects.",
+      "topics": [
+        "Creative problem solving",
+        "Age-appropriate coding foundations",
+        "Games and simple web projects"
+      ],
+      "contact": "Parents and guardians can enquire about the learning options. Please use an adult’s contact details."
+    },
+    {
+      "slug": "corporates",
+      "name": "Edutech For Corporates",
+      "icon": "briefcase",
+      "description": "Meet your Hiring & Training Needs",
+      "tag": "BUILD YOUR TEAM’S NEXT CHAPTER",
+      "overview": "Tell us about your team’s learning goals or hiring requirements. Explore training in Python, SQL, data, and artificial intelligence.",
+      "topics": [
+        "Team learning requirements",
+        "Technical skills development",
+        "Hiring and assessment requirements"
+      ],
+      "contact": "Share your organisation’s requirements using the enquiry form."
+    },
+    {
+      "slug": "placement-preparation",
+      "name": "Placement Preparation",
+      "icon": "target",
+      "description": "Ace Up your Aptitude",
+      "tag": "PREPARE WITH PURPOSE",
+      "overview": "Work through sample aptitude questions and practise the problem-solving skills used in interviews.",
+      "topics": [
+        "Quantitative aptitude",
+        "Logical reasoning",
+        "Coding interview practice"
+      ],
+      "contact": "Enquire to learn more about placement preparation."
+    }
+  ],
+  "resources": [
+    {
+      "slug": "free-resources",
+      "name": "Free Resources",
+      "icon": "book",
+      "description": "Quick references for Python, SQL, and AI.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Quick references for Python, SQL, and AI."
+    },
+    {
+      "slug": "success-stories",
+      "name": "Success Stories",
+      "icon": "spark",
+      "description": "Learning journeys from the Edutech community.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Learning journeys from the Edutech community."
+    },
+    {
+      "slug": "learn-hub",
+      "name": "Learn Hub",
+      "icon": "brain",
+      "description": "Find a learning path and your next practice task.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Find a learning path and your next practice task."
+    },
+    {
+      "slug": "rewards",
+      "name": "Rewards",
+      "icon": "target",
+      "description": "Keep track of learning milestones.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Keep track of learning milestones."
+    },
+    {
+      "slug": "leaderboard",
+      "name": "Leaderboard",
+      "icon": "chart",
+      "description": "Explore community practice challenges.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Explore community practice challenges."
+    },
+    {
+      "slug": "referral",
+      "name": "Referral",
+      "icon": "people",
+      "description": "Share Edutech with someone who wants to learn.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Share Edutech with someone who wants to learn."
+    },
+    {
+      "slug": "blogs",
+      "name": "Blogs",
+      "icon": "book",
+      "description": "Short explainers for your learning journey.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Short explainers for your learning journey."
+    },
+    {
+      "slug": "get-the-app",
+      "name": "Get The App",
+      "icon": "phone",
+      "description": "Add the Edutech web app to your device.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Add the Edutech web app to your device."
+    },
+    {
+      "slug": "become-an-affiliate",
+      "name": "Become An Affiliate",
+      "icon": "briefcase",
+      "description": "Enquire about working with Edutech.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Enquire about working with Edutech."
+    },
+    {
+      "slug": "resume-builder",
+      "name": "Resume Builder",
+      "icon": "document",
+      "description": "Create a simple resume and print it as a PDF.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Create a simple resume and print it as a PDF."
+    },
+    {
+      "slug": "community-hub",
+      "name": "Community Hub",
+      "icon": "people",
+      "description": "Ask questions and share what you are learning.",
+      "tag": "THE EDUTECH LEARNING SPACE",
+      "overview": "Ask questions and share what you are learning."
+    }
+  ]
+}

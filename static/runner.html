@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' blob:; worker-src blob:; connect-src 'none'; img-src 'none'; base-uri 'none'; form-action 'none'"><title>Edutech isolated JavaScript runner</title></head><body><script>
+'use strict';
+// This page is loaded in an iframe with sandbox="allow-scripts" (opaque origin).
+// A worker allows an infinite loop to be terminated without blocking the UI.
+let active = null;
+addEventListener('message', event => {
+  if (event.source !== parent || event.data?.type !== 'run') return;
+  const {id, code, tests, stdin} = event.data;
+  if (active) active.terminate();
+  const workerSource = `self.onmessage = async function(event) {
+    const payload = event.data;
+    let lines = 0;
+    const show = value => { try { return typeof value === 'string' ? value : JSON.stringify(value) ?? String(value); } catch { return String(value); } };
+    const print = (...args) => { if (lines++ < 100) self.postMessage({kind:'log', text:args.map(show).join(' ').slice(0,2000)}); };
+    const console = {log:print, info:print, warn:print, error:print, table:print, clear:()=>{}};
+    let inputLines = (payload.stdin || '').split('\\n');
+    const readline = () => inputLines.shift() ?? '';
+    try {
+      if (payload.tests) {
+        const solve = new Function('console','readline', payload.code + '\\n;return typeof solve === "function" ? solve : null;')(console,readline);
+        if (!solve) throw new Error('Define a function named solve.');
+        const results = [];
+        for (const test of payload.tests) {
+          const value = await solve(...test.input);
+          const actual = show(value).slice(0,2000);
+          results.push({pass:JSON.stringify(value) === JSON.stringify(test.expected), actual, expected:show(test.expected), input:show(test.input)});
+        }
+        self.postMessage({kind:'tests', results});
+      } else {
+        const value = new Function('console','readline', payload.code)(console,readline);
+        if (value !== undefined) print(value);
+      }
+      self.postMessage({kind:'done'});
+    } catch(error) { self.postMessage({kind:'error', text:String(error).slice(0,2000)}); }
+  };`;
+  const url = URL.createObjectURL(new Blob([workerSource], {type:'text/javascript'}));
+  const worker = new Worker(url);
+  active = worker;
+  const send = payload => parent.postMessage({id, ...payload}, '*');
+  const cleanup = () => {clearTimeout(timeout); worker.terminate(); URL.revokeObjectURL(url); active = null;};
+  const timeout = setTimeout(() => {send({kind:'error',text:'Time limit reached (2 seconds). Check for an infinite loop.'}); cleanup();}, 2000);
+  worker.onmessage = e => {send(e.data); if (e.data.kind === 'done' || e.data.kind === 'error') cleanup();};
+  worker.onerror = e => {send({kind:'error',text:e.message || 'Could not run this code.'});cleanup();};
+  worker.postMessage({code, tests, stdin});
+});
+parent.postMessage({kind:'ready'}, '*');
+</script></body></html>

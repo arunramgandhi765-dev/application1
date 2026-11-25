@@ -1,0 +1,11 @@
+{
+  "codekata": [
+    {"id":"sum-array","name":"Sum an array","difficulty":"Beginner","description":"Write solve(numbers) to return the sum of all numbers. An empty array should return 0.","starter":"function solve(numbers) {\n  // Add your solution here.\n  return 0;\n}","tests":[{"input":[[2,4,6]],"expected":12},{"input":[[]],"expected":0},{"input":[[-3,5]],"expected":2}]},
+    {"id":"reverse-word","name":"Reverse a word","difficulty":"Beginner","description":"Write solve(word) to return the characters of an English word in reverse order.","starter":"function solve(word) {\n  return word;\n}","tests":[{"input":["learn"],"expected":"nrael"},{"input":["AI"],"expected":"IA"},{"input":[""],"expected":""}]},
+    {"id":"count-even","name":"Count even numbers","difficulty":"Beginner","description":"Write solve(numbers) to count the even integers in the array. Zero is even.","starter":"function solve(numbers) {\n  return 0;\n}","tests":[{"input":[[1,2,3,4]],"expected":2},{"input":[[0,-2,7]],"expected":2},{"input":[[]],"expected":0}]}
+  ],
+  "fixthecode": [
+    {"id":"loop-boundary","name":"The missing last number","difficulty":"Beginner","description":"This function should add every number in the array. Find the loop boundary bug.","starter":"function solve(numbers) {\n  let total = 0;\n  for (let i = 0; i < numbers.length - 1; i++) {\n    total += numbers[i];\n  }\n  return total;\n}","tests":[{"input":[[1,2,3]],"expected":6},{"input":[[10]],"expected":10},{"input":[[]],"expected":0}]},
+    {"id":"numeric-sort","name":"Numbers in the wrong order","difficulty":"Beginner","description":"Return numbers sorted from smallest to largest. The default sort does not compare numbers numerically.","starter":"function solve(numbers) {\n  return [...numbers].sort();\n}","tests":[{"input":[[10,2,1]],"expected":[1,2,10]},{"input":[[100,20,3]],"expected":[3,20,100]},{"input":[[-2,-10,0]],"expected":[-10,-2,0]}]}
+  ]
+}
